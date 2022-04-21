@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ProfileService } from './profile.service';
-import { HttpModule} from '@angular/http'
+// import { HttpModule} from '@angular/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
+import { profile } from 'console';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { ProfileComponent } from './profile/profile.component';
     BrowserModule,
     AppRoutingModule,
   ],
-  providers: [ProfileService],
+  providers: [profile.Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
