@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Http, Headers} from '@angular/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { map } from 'rxjs';
 import 'rxjs/add/operator/map';
 
@@ -8,20 +8,23 @@ import 'rxjs/add/operator/map';
 })
 export class ProfileService {
   private username:string | undefined;
-  private clientid = '';
-  private clientSecret = '';
-  constructor(private http:Http) {
+  private clientid = 'da0bc7b80a8cf72abac4';
+  private clientSecret = 'd7e6cb289367824141c101eb6259f56779713b96';
+  constructor(private http:HttpClient) {
     console.log("service is now ready!");
     this.username = 'bethnduta';console.log("service is now ready!");
     this.username = 'bethnduta';
   }
   getProfileInfo() {
     return this.http.get("https://api.github.com/users/", this.username + "?client_id=" + this.clientid + "&client_secret=" + this.clientSecret);
-    .map(res => res.json());
+    
   }
 
   getProfileRepos() {
     return this.http.get("https://api.github.com/users/", this.username + "?client_id=" + this.clientid + "&client_secret=" + this.clientSecret);
-    .map(res => res.json());
+    
+  }
+  updateProfile(username:string){
+    this.username = username;
   }
 }

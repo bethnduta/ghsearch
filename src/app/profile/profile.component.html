@@ -17,19 +17,19 @@
                 </div>
                 <div class="col-sm-5">
                     <ul class="list-group">
-                        <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
-                        <li class="list-group-item" *ngIf="profile.hireable">{{profile.hireable}}</li>
-                        <li class="list-group-item" *ngIf="profile.blog">{{profile.blog}} <a href="{{profile.bio}}" target="_blank"></a></li>
-                        <li class="list-group-item" *ngIf="profile.email">{{profile.email}}</li>
+                        <li class="list-group-item" *ngIf="user.bio">{{user.bio}}</li>
+                        <li class="list-group-item" *ngIf="user.hireable">{{user.hireable}}</li>
+                        <li class="list-group-item" *ngIf="user.blog">{{user.blog}} <a href="{{user.bio}}" target="_blank"></a></li>
+                        <li class="list-group-item" *ngIf="user.email">{{user.email}}</li>
                     </ul>
                 </div>
                 <div class="col-sm-4">
                     <div>
                         <p>
-                            <span class="label label-default">{{profile.followers}}followers</span>
-                            <span class="label label-primary">Following {{profile.following}}</span>
-                            <span class="label label-success">Following {{profile.public_ggists}} public gists</span>
-                            <span class="label label-info">{{profile.public_repos}}public repositories</span>
+                            <span class="label label-default">{{user.followers}}followers</span>
+                            <span class="label label-primary">Following {{user.following}}</span>
+                            <span class="label label-success">Following {{user.public_gists}} public gists</span>
+                            <span class="label label-info">{{user.public_repos}}public repositories</span>
                         </p>
                         <p><a href="{{profile.html_url}}" class="btn btn-success btn-sm">view profile on github</a></p>
                         <div class="panel panel-default">
@@ -49,4 +49,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> 
