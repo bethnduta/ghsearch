@@ -19,17 +19,18 @@ export class ProfileService {
     console.log("service is now ready!");
     this.username = 'bethnduta';
   }
-  https://api.github.com/users/
+  
   getUser(){
     return this._http.get('https://api.github.com/users/'+this.username+'?client_id='+this.client_id+'&client_secret='+this.client_secret)
         .map((res: { json: () => any; }) => res.json());
 }
 
-  getProfileRepos() {
-    return this.http.get("https://api.github.com/users/", this.username + "?client_id=" + this.clientid + "&client_secret=" + this.clientSecret);
-    
-  }
-  updateProfile(username:string){
-    this.username = username;
-  }
+getRepos(){
+  return this._http.get('https://api.github.com/users/'+this.username+'/repos?client_id='+this.client_id+'&client_secret='+this.client_secret)
+      .map((res: { json: () => any; }) => res.json());
+}
+
+updateUsername(username:string){
+  this.username = username;
+}
 }
