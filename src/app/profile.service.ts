@@ -12,7 +12,8 @@ export class ProfileService {
   private clientSecret = 'd7e6cb289367824141c101eb6259f56779713b96';
   constructor(private http:HttpClient) {
     console.log("service is now ready!");
-    this.username = 'bethnduta';console.log("service is now ready!");
+    this.username = 'bethnduta';
+    console.log("service is now ready!");
     this.username = 'bethnduta';
   }
   getProfileInfo() {
