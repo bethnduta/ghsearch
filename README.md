@@ -18,3 +18,6 @@ There are some few bugs on the project
 
 ## Contact Details
 For more information/clarification concerning the project, kindly reach me through my email bethnduta05@gmail.com
+
+## LICENSE
+Copyright (c) 2022
