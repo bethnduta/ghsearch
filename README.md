@@ -9,3 +9,9 @@ Click on the live link in the about section, which will direct you to the websit
 
 ## Known Bugs
 There are some few bugs on the project
+
+## Technologies Used
+* [HTML]
+* [CSS]
+* [BOOTSTRAP]
+* [JAVASCRIPT & TYPESCRIPT]
