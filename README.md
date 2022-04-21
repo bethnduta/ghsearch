@@ -15,3 +15,6 @@ There are some few bugs on the project
 * [CSS]
 * [BOOTSTRAP]
 * [JAVASCRIPT & TYPESCRIPT]
+
+## Contact Details
+For more information/clarification concerning the project, kindly reach me through my email bethnduta05@gmail.com
